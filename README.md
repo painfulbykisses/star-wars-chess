@@ -2,7 +2,7 @@
 
 A fully functional, Star Wars-themed 2D Chess game built with **React**, **Vite**, and **Tailwind CSS**. Experience the classic strategy game with a retro 8-bit aesthetic, immersive animations, and a battle between the Light and Dark sides of the Force.
 
-![Star Wars Chess](https://placehold.co/600x400/1e293b/yellow?text=Galactic+Chess+Preview)
+![Star Wars Chess](screenshot.png)
 
 ## ✨ Features
 
