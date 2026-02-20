@@ -1,33 +1,46 @@
 # Galactic Chess: 8-Bit Wars 🌌
 
-A fully functional, Star Wars-themed 2D Chess game built with **React**, **Vite**, and **Tailwind CSS**. Experience the classic strategy game with a retro 8-bit aesthetic, immersive animations, and a battle between the Light and Dark sides of the Force.
+A fully functional, Star Wars-themed 2D Chess game built with **React**, **Vite**, **Tailwind CSS**, and **Firebase**. Experience the classic strategy game with a retro 8-bit aesthetic, immersive animations, retro sound effects, and online multiplayer — all in your browser.
 
 ![Star Wars Chess](screenshot.png)
 
 ## ✨ Features
 
-- **Star Wars Themed Pieces**: 
-  - **Rebel Alliance (White)**: Luke (King), Leia (Queen), Yoda (Bishop), R2-D2 (Knight), X-Wing (Rook), Rebel Troopers (Pawn).
-  - **Galactic Empire (Black)**: Palpatine (King), Vader (Queen), Boba Fett (Bishop), TIE Fighter (Knight), Death Star (Rook), Stormtroopers (Pawn).
-- **Retro 8-Bit Art**: Custom SVG pixel art for all chess pieces.
-- **Immersive UI**:
-  - **Battle Log**: Real-time updates on moves and captures with flavor text (e.g., "CRITICAL HIT!", "The Galaxy is saved!").
-  - **Phase Animations**: Dramatic full-screen transitions between Rebel and Empire turns.
-  - **Dynamic Styling**: Glowing effects, floating animations for pieces, and a sci-fi cockpit interface.
-- **Game Logic**:
-  - Fully implemented chess movement rules.
-  - Valid move highlighting.
-  - Capture mechanics.
-  - Pawn promotion (auto-promotes to Queen/Vader).
-  - Win condition detection (King capture).
+### 🎮 Game Modes
+- **Local Play (1 Screen)** — Play against a friend on the same device, turn by turn.
+- **Online Multiplayer** — Create or join a room with a unique code and play against anyone in real-time via Firebase.
+
+### ♟️ Star Wars Themed Pieces
+- **Rebel Alliance (Light Side)**: Luke (King), Leia (Queen), Yoda (Bishop), R2-D2 (Knight), X-Wing (Rook), Rebel Troopers (Pawn).
+- **Galactic Empire (Dark Side)**: Palpatine (King), Vader (Queen), Boba Fett (Bishop), TIE Fighter (Knight), Death Star (Rook), Stormtroopers (Pawn).
+
+### 🎨 Retro 8-Bit Art
+- Custom SVG pixel art sprites for all 12 unique chess pieces.
+- Crisp rendering with `shapeRendering="crispEdges"` for an authentic retro feel.
+
+### 🔊 Audio System
+- 8-bit sound effects powered by the **Web Audio API** (no external audio files needed).
+- Unique sounds for **move**, **capture**, and **error** actions.
+
+### 🖥️ Immersive UI
+- **Lobby Menu** — Choose between Local or Online play; create or join rooms.
+- **Combat Log** — Real-time battle updates with flavor text (e.g., "CRITICAL HIT!", "The Galaxy is saved!").
+- **Phase Animations** — Dramatic full-screen banners for Rebel / Empire turn transitions.
+- **Board Auto-Flip** — Toggle automatic board rotation per turn for a natural playing perspective.
+- **Dynamic Styling** — Glowing effects, floating animations, starfield background, and a sci-fi cockpit interface.
+
+### ⚙️ Game Logic
+- Fully implemented chess movement rules for all piece types.
+- Valid move highlighting with cyan indicators.
+- Capture mechanics with red ring highlights.
+- Pawn promotion (auto-promotes to Queen/Vader).
+- Win condition detection (King capture).
 
 ## 🚀 Getting Started
 
-Follow these instructions to get the project up and running on your local machine.
-
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [Node.js](https://nodejs.org/) (version 18 or higher recommended)
 - npm or yarn
 
 ### Installation
@@ -55,11 +68,19 @@ npm run dev
 ```
 Open your browser and navigate to `http://localhost:5173` (or the URL shown in your terminal).
 
+### Online Multiplayer Setup
+
+> **Note:** Online multiplayer requires a Firebase project. If Firebase is not configured, the game will still work in **Local Play** mode.
+
+To enable online mode, provide your Firebase config via the `__firebase_config` global variable before the app loads.
+
 ## 🛠️ Built With
 
-- **[React](https://reactjs.org/)** - UI Library
-- **[Vite](https://vitejs.dev/)** - Build tool
-- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework (v4 via @tailwindcss/vite)
+- **[React](https://reactjs.org/)** — UI Library
+- **[Vite](https://vitejs.dev/)** — Build tool
+- **[Tailwind CSS](https://tailwindcss.com/)** — Utility-first CSS framework (v4 via @tailwindcss/vite)
+- **[Firebase](https://firebase.google.com/)** — Backend for online multiplayer (Auth + Firestore)
+- **Web Audio API** — Retro 8-bit sound effects
 
 ## 🔧 Troubleshooting
 
@@ -73,4 +94,4 @@ If you encounter styling issues (e.g., blocks instead of pixel art):
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
-*May the Force be with you.*
+*May the Force be with you.* ⚔️
