@@ -59,7 +59,14 @@ Open your browser and navigate to `http://localhost:5173` (or the URL shown in y
 
 - **[React](https://reactjs.org/)** - UI Library
 - **[Vite](https://vitejs.dev/)** - Build tool
-- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework (v4 via @tailwindcss/vite)
+
+## 🔧 Troubleshooting
+
+If you encounter styling issues (e.g., blocks instead of pixel art):
+1.  **Restart the server**: Stop the terminal (`Ctrl+C`) and run `npm run dev` again.
+2.  **Clean Cache**: Delete `node_modules/.vite` folder and restart.
+3.  **Check Config**: Ensure `postcss.config.js` and `tailwind.config.js` are **NOT** present in the root directory.
 
 ## 📜 License
 
