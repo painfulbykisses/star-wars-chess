@@ -2,6 +2,8 @@
 
 A fully functional, Star Wars-themed 2D Chess game built with **React**, **Vite**, **Tailwind CSS**, and **Firebase**. Experience the classic strategy game with a retro 8-bit aesthetic, immersive animations, retro sound effects, and online multiplayer — all in your browser.
 
+### 🌐 [▶ Play Now — Live Demo](https://star-wars-chess.vercel.app/)
+
 ![Star Wars Chess](screenshot.png)
 
 ## ✨ Features
